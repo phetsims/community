@@ -15,7 +15,7 @@ For a demonstration of using common code centered around `scenery`, see [Scenery
 ## Contributing
 Some helpful documents for making contributions to the common code repos:
 - [PhET Software Design Patterns](https://github.com/phetsims/phet-info/blob/master/doc/phet-software-design-patterns.md)
-- [PhET Coding Conventions][(](https://github.com/phetsims/phet-info/blob/master/doc/coding-conventions.md))
+- [PhET Coding Conventions](https://github.com/phetsims/phet-info/blob/master/doc/coding-conventions.md)
 - [TypeScript Conventions](https://github.com/phetsims/phet-info/blob/master/doc/typescript-conventions.md) and [TypeScript Quickstart](https://github.com/phetsims/phet-info/blob/master/doc/typescript-quick-start.md)
 
 # Licensing
