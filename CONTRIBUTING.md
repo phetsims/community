@@ -2,7 +2,7 @@
 
 PhET encourages pull requests to any of its GitHub repositories.
 
-- Sign the [CLA](./CLA.md) here.
+- See the instructions for signing the [CLA](./CLA.md) before contributing.
 - Fork the repo(s) required.
 - For common code where it applies, please do not change or commit to
   `dist/`, these stable built versions are updated less regularly.
