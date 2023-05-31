@@ -17,7 +17,7 @@
 
  There are many libraries out there for creating and rendering interactive content on the web - why might you choose the PhET Library Stack? We created and evolved the PhET Library because no existing platform met all of the needs for our simulations with enough flexibility and robustness required to support our end-users. You may be interested in using the PhET Library Stack if having all or most of the following features natively available to you is important:
 
-<!-- VERIFY FOR ACCURACY AND ADD MORE DETAIL -->
+<!-- Notes From Sam Reid below. We should VERIFY FOR ACCURACY AND ADD MORE DETAIL -->
 :star:  Cross Platform
 :star:  Pixel Perfect Design
 :star:  Swipe to snag
@@ -26,14 +26,15 @@
 :star:  Component Library + Build your own
 :star:  High pixel density devices
 :star:  TypeScript = type safety + autocomplete
+:star:  PDOM and screen reader accessibility
 :star:  Voicing
+:star:  Pinch to zoom (this is normal for HTML but value added over pixi)
 :star:  Downloadable / fully offline / Single-File artifacts
 :star:  Render to SVG, canvas or WebGL (partial)
 :star:  API for specifying keyboard traversal order
 :star:  Layout engine
 :star:  Abstraction over CSS
 :star:  Axon Property.link
-:star:  Pinch to zoom (this is normal for HTML but value added over pixi)
 
 - Abstract declarative APIs allow scenery to adjust performance/quality on demand, using whatever technology is best on the given browser (and to work around browser bugs)
 - Clipping/filtering/positioning/layering works seamlessly across technologies used (SVG/Canvas/WebGL)
@@ -49,6 +50,7 @@
 ## Common Code Libraries
 
 <!-- WHICH LIBRARIES SHOULD BE HERE - LETS MAINTAIN A DIFFERENT LIST THAN THE PHET DEVELOPMENT -->
+<!-- let's order the libraries with likelihood of use and which depend on which. JO has a sense for the "hierarchy" of dependcies leading from e.g., axon up to scenery-phet. We probably don't need to get too deep here, but it'd be nice to indicate more isolated libraries from the phet specific libraries from the more dependent libraries -->
 
 <!-- a11y-research
 axon
@@ -105,19 +107,20 @@ vegas -->
 | [perennial-alias](https://github.com/phetsims/perennial/)  | 11,000  | Copy of perennial that can run on non-master SHAs.
 | [sherpa](https://github.com/phetsims/sherpa/)  | -  | All of our 3rd-party dependencies. Some such as font-awesome or lodash are used in every simulation and some such as numeric or three.js are sim-specific.
 
+<!-- ## Another Category for other libraries in the list above -->
+
 ## phet-lib: Built version of the common code libraries
 
  Download built versions of the common code libraries for your app as phet-lib from the [phet-lib repo](https://github.com/phetsims/phet-lib)
+<!-- It might be nice to have a listed reason to use this specifically, e.g., little setup needed-->
 
 # Using PhET Library Stack to Make Web Interactives in HTML5
 
- <!-- WE SHOULD HAVE A QUICK, GENERALIZED INSTALL GUIDE FOR INDIVIDUAL LIBRARIES, BUT ALSO EACH LIBRARY SHOULD HAVE SPECIFIC INSTRUCTIONS -->
+ <!-- WE SHOULD HAVE A QUICK, GENERALIZED INSTALL GUIDE FOR INDIVIDUAL LIBRARIES, BUT ALSO EACH LIBRARY SHOULD HAVE SPECIFIC INSTRUCTIONS - we want to clearly distinguish using phet-lib from following the PhET Development Overview -->
 
- For a current overview of setting up and using PhET's common code libraries, see the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md).
+❗ If you are creating a simulation, see the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md).
 
  > NOTE: The PhET Development Overview is written assuming individuals are developing *interactive simulations* using PhET code. Information on integrating the PhET Library Stack into your project is coming soon!
-
- :gift:  For a simple demonstration of using common code centered around `scenery`, see [Scenery Lab Demo](https://github.com/phetsims/scenery-lab-demo)
 
 ## Examples of PhET API use (not a PhET Simulation)
 
@@ -126,6 +129,8 @@ vegas -->
  - [Optimal Wordle Solutions by @jonathanolson](https://jonathanolson.net/experiments/optimal-wordle-solutions)
  - [Cupcake Snake Game by @samreid](https://github.com/samreid/cupcake-snake)
  - [Paper Playground - A multimodal, collaborative web interaction design tool using phetlib](https://github.com/phetsims/paper-land/)
+ - [Simple examples using Scenery](https://phetsims.github.io/scenery/examples/)
+ - For a simple demonstration using phet-lib, see [Scenery Lab Demo](https://github.com/phetsims/scenery-lab-demo)
 
 # Joining the Comminity and Contributing
 
@@ -143,7 +148,8 @@ vegas -->
 
 ## What is the difference between PhET Library Stack and PhET Interactive Simulations?
 
- PhET Common Code Libraries are the HTML5/JavaScript/TypeScript APIs (detailed above) that PhET Interactive Simulations are built on. The use of PhET Common Code Libraries **is not limited to creating interactive science and math simulations!** It can be used to support the creation of all web interactives. PhET Common Code supports rich and inclusive multimodal interaction, including the architecture to build robust screen reader access when used in conjunction with our [Interactive Description Design Framework](https://www.coursera.org/learn/description-design-for-interactive-learning-resources)
+ PhET Common Code Libraries are the HTML5/JavaScript/TypeScript APIs (detailed above) that PhET Interactive Simulations are built on. The use of PhET Common Code Libraries **is not limited to creating interactive science and math simulations!** It can be used to support the creation of all web interactives. PhET Common Code supports rich and inclusive multimodal interaction, including the architecture to build robust screen reader access when used in conjunction with our [Interactive Description Design Framework](https://www.coursera.org/learn/description-design-for-interactive-learning-resources) 
+<!--  BF to add another line or two on the simulations -->
 
 ## Where can I get help or provide feedback for specific PhET Simulations?
 
@@ -154,6 +160,7 @@ vegas -->
 ## What should I do to participate in the PhET Developer Community?
 
  - Read our [CODE\_OF\_CONDUCT.md](https://github.com/phetsims/community/blob/master/CODE_OF_CONDUCT.md), [GitHub’s policies](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines), and our [CONTRIBUTING.md](https://github.com/phetsims/community/blob/master/CONTRIBUTING.md) before creating or contributing to a discussion or to the codebase.
+<!--  - needs link to discussion forum -->
  - When posting a question or problem, provide context. What problem are you trying to solve? What are the exact steps to recreate the problem for others to reproduce?
  - Help and respond to others that post to the forum. Have you encountered a similar problem or tried to implement a similar feature? Share your experiences!
  - Share with us what you are using PhET code for! Share in the [Show and Tell category](https://github.com/orgs/phetsims/discussions/categories/show-and-tell) of the Discussion forum.
@@ -170,10 +177,12 @@ See the [Source Code page of our website](https://phet.colorado.edu/en/about/sou
 
 <!-- ### What happens to my projects if these libraries stop being supported? -->
 
+<!-- Any other FAQs come up to add here? -->
+
 # Licensing
 
 PhET Common Code Libraries are licensed through the MIT License, freely available for use by anyone, including this repository.
 
-*Simulations* differ in their licensing depending on the details of their development cycle (e.g., funding, partnerships, and third-party libraries). See the LICENSE file in each repository for details.
+*Simulations* differ in their licensing (e.g., GPLv3) depending on the details of their development cycle (e.g., funding, partnerships, and third-party libraries). See the LICENSE file in each repository for details.
 
 PhET does not engage in licensing our Simulation *source code* to commercial entities at this time. Commercial partners interested in licensing our *Simulations* should see the PhET Interactive Simulations website for [partnership inquiries](https://phet.colorado.edu/en/partnerships).
