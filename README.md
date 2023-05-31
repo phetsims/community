@@ -1,20 +1,23 @@
 # PhET Library Stack Developer Community
 
-:warning: **!!THIS DOCUMENT IS A WORK IN PROGRESS!!** :warning:
+ :warning: **!!THIS DOCUMENT IS A WORK IN PROGRESS!!** :warning:
 
-Welcome to the PhET Library Stack Developer Community!
+ <!-- Any good ideas for images we can drop throughout this document? -->
 
-This repository houses discussion and resources for the developer community using PhET Common Code Libraries to create interactive simulations and other web interactives in HTML5.
+ Welcome to the PhET Library Stack Developer Community!
+
+ This repository houses discussion and resources for the developer community using PhET Common Code Libraries to create interactive simulations and other web interactives in HTML5.
 
 # What is the PhET Library Stack?
 
-They are a collection of libraries built around an MVC framework that can be used **together or separately** to support an interactive web project. Each library is housed PhET uses many or all of these libraries when creating an educational interactive simulation. Some libraries are more specific to our usage, including assets and branding, but most offer more generalizable use cases.
+ They are a collection of libraries built around an MVC framework that can be used **together or separately** to support an interactive web project. Each library is housed PhET uses many or all of these libraries when creating an educational interactive simulation. Some libraries are more specific to our usage, including assets and branding, but most offer more generalizable use cases.
 
 
 ## Why use the PhET Library Stack?
 
-<!-- VERIFY FOR ACCURACY AND ADD MORE DETAIL -->
+ There are many libraries out there for creating and rendering interactive content on the web - why might you choose the PhET Library Stack? We created and evolved the PhET Library because no existing platform met all of the needs for our simulations with enough flexibility and robustness required to support our end-users. You may be interested in using the PhET Library Stack if having all or most of the following features natively available to you is important:
 
+<!-- VERIFY FOR ACCURACY AND ADD MORE DETAIL -->
 :star:  Cross Platform
 :star:  Pixel Perfect Design
 :star:  Swipe to snag
@@ -40,6 +43,8 @@ They are a collection of libraries built around an MVC framework that can be use
 - Advanced layout (based on customizable bounds), and accurate shape computations and CAG for interfaces and components
 - Garbage collector friendly - pooling is used
 - Library of IU components that are battle tested and flexible
+
+:red_circle: 
 
 ## Common Code Libraries
 
@@ -101,62 +106,69 @@ vegas -->
 | [sherpa](https://github.com/phetsims/sherpa/)  | -  | All of our 3rd-party dependencies. Some such as font-awesome or lodash are used in every simulation and some such as numeric or three.js are sim-specific.
 
 ## phet-lib: Built version of the common code libraries
-Download built versions of the common code libraries for your app as phet-lib from the [phet-lib repo](https://github.com/phetsims/phet-lib)
+
+ Download built versions of the common code libraries for your app as phet-lib from the [phet-lib repo](https://github.com/phetsims/phet-lib)
 
 # Using PhET Library Stack to Make Web Interactives in HTML5
 
-<!-- WE SHOULD HAVE A QUICK, GENERALIZED INSTALL GUIDE FOR INDIVIDUAL LIBRARIES, BUT ALSO EACH LIBRARY SHOULD HAVE SPECIFIC INSTRUCTIONS -->
+ <!-- WE SHOULD HAVE A QUICK, GENERALIZED INSTALL GUIDE FOR INDIVIDUAL LIBRARIES, BUT ALSO EACH LIBRARY SHOULD HAVE SPECIFIC INSTRUCTIONS -->
 
-For a current overview of setting up and using PhET's common code libraries, see the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md).
+ For a current overview of setting up and using PhET's common code libraries, see the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md).
 
-> NOTE: The PhET Development Overview is written assuming individuals are developing *interactive simulations* using PhET code. Information on integrating the PhET Library Stack into your project is coming soon!
+ > NOTE: The PhET Development Overview is written assuming individuals are developing *interactive simulations* using PhET code. Information on integrating the PhET Library Stack into your project is coming soon!
 
-:gift:  For a simple demonstration of using common code centered around `scenery`, see [Scenery Lab Demo](https://github.com/phetsims/scenery-lab-demo)
+ :gift:  For a simple demonstration of using common code centered around `scenery`, see [Scenery Lab Demo](https://github.com/phetsims/scenery-lab-demo)
 
 ## Examples of PhET API use (not a PhET Simulation)
 
-- [Numerical Method Simulations by Autar Kaw](https://nm.mathforcollege.com/numericalmethodssimulations/)
-<!-- - [Simple platformer game by @jessegreenberg](https://github.com/jessegreenberg/jessegreenberg.github.io/tree/main/christmas-cat) WAITING on JG to move into another repo and clean it up-->
-- [Optimal Wordle Solutions by @jonathanolson](https://jonathanolson.net/experiments/optimal-wordle-solutions)
-- [Cupcake Snake Game by @samreid](https://github.com/samreid/cupcake-snake)
-- [Paper Playground - A multimodal, collaborative web interaction design tool using phetlib](https://github.com/phetsims/paper-land/)
+ - [Numerical Method Simulations by Autar Kaw](https://nm.mathforcollege.com/numericalmethodssimulations/)
+ <!-- - [Simple platformer game by @jessegreenberg](https://github.com/jessegreenberg/jessegreenberg.github.io/tree/main/christmas-cat) WAITING on JG to move into another repo and clean it up-->
+ - [Optimal Wordle Solutions by @jonathanolson](https://jonathanolson.net/experiments/optimal-wordle-solutions)
+ - [Cupcake Snake Game by @samreid](https://github.com/samreid/cupcake-snake)
+ - [Paper Playground - A multimodal, collaborative web interaction design tool using phetlib](https://github.com/phetsims/paper-land/)
 
-# Contributing
+# Joining the Comminity and Contributing
 
-We welcome many kinds of contributions to PhET from common code features/bug fixes to documentation updates!
-
-Please see the [CONTRIBUTING.md](./CONTRIBUTING.md) found in any common code repository.
+ Join the community by participating in the [community discussion forum](https://github.com/orgs/phetsims/discussions) with what you're  working on, your ideas, and questions!
+ 
+ We welcome many kinds of contributions to PhET from common code features/bug fixes to documentation updates.
+ 
+ Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) found in any common code repository.
 
 # FAQ
 
 ## What this repository is for?
 
-- Questions, comments, and ideas around the use and improvement of the [common code repositories](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md#source-code-and-dependencies) created and maintained by the developers at PhET Interactive Simulations.
+  Questions, comments, and ideas around the use and improvement of the [common code repositories](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md#source-code-and-dependencies) created and maintained by the developers at PhET Interactive Simulations.
 
 ## What is the difference between PhET Library Stack and PhET Interactive Simulations?
 
-PhET Common Code Libraries are the HTML5/JavaScript/TypeScript APIs (detailed above) that PhET Interactive Simulations are built on. The use of PhET Common Code Libraries **is not limited to creating interactive science and math simulations!** It can be used to support the creation of all web interactives. PhET Common Code supports rich and inclusive multimodal interaction, including the architecture to build robust screen reader access when used in conjunction with our [Interactive Description Design Framework](https://www.coursera.org/learn/description-design-for-interactive-learning-resources)
+ PhET Common Code Libraries are the HTML5/JavaScript/TypeScript APIs (detailed above) that PhET Interactive Simulations are built on. The use of PhET Common Code Libraries **is not limited to creating interactive science and math simulations!** It can be used to support the creation of all web interactives. PhET Common Code supports rich and inclusive multimodal interaction, including the architecture to build robust screen reader access when used in conjunction with our [Interactive Description Design Framework](https://www.coursera.org/learn/description-design-for-interactive-learning-resources)
 
 ## Where can I get help or provide feedback for specific PhET Simulations?
 
-- To request **new PhET Simulations or new features in PhET Simulations**, follow the links on the [Getting Started section of the Help Center](https://phet.colorado.edu/en/help-center/getting-started#:~:text=I%20have%20a%20sim%20idea.%20Where%20can%20I%20send%20it%3F).
-- **For help or questions related to using PhET Simulations**, please see our [website](https://phet.colorado.edu/en/help-center/getting-started) or e-mail [phethelp@colorado.edu](mailto:phethelp@colorado.edu).
-- **To report a problem for a specific PhET Simulation**. Open the PhET menu on the navigation bar of the simulation and select “Report a Problem…” to submit a bug report using the provided form.
+ - To request **new PhET Simulations or new features in PhET Simulations**, follow the links on the [Getting Started section of the Help Center](https://phet.colorado.edu/en/help-center/getting-started#:~:text=I%20have%20a%20sim%20idea.%20Where%20can%20I%20send%20it%3F).
+ - **For help or questions related to using PhET Simulations**, please see our [website](https://phet.colorado.edu/en/help-center/getting-started) or e-mail [phethelp@colorado.edu](mailto:phethelp@colorado.edu).
+ - **To report a problem for a specific PhET Simulation**. Open the PhET menu on the navigation bar of the simulation and select “Report a Problem…” to submit a bug report using the provided form.
 
 ## What should I do to participate in the PhET Developer Community?
 
-- Read our [CODE\_OF\_CONDUCT.md](https://github.com/phetsims/community/blob/master/CODE_OF_CONDUCT.md), [GitHub’s policies](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines), and our [CONTRIBUTING.md](https://github.com/phetsims/community/blob/master/CONTRIBUTING.md) before creating or contributing to a discussion or to the codebase.
-- When posting a question or problem, provide context. What problem are you trying to solve? What are the exact steps to recreate the problem for others to reproduce?
-- Help and respond to others that post to the forum. Have you encountered a similar problem or tried to implement a similar feature? Share your experiences!
-- Share with us what you are using PhET code for! Share in the [Show and Tell category](https://github.com/orgs/phetsims/discussions/categories/show-and-tell) of the Discussion forum.
+ - Read our [CODE\_OF\_CONDUCT.md](https://github.com/phetsims/community/blob/master/CODE_OF_CONDUCT.md), [GitHub’s policies](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines), and our [CONTRIBUTING.md](https://github.com/phetsims/community/blob/master/CONTRIBUTING.md) before creating or contributing to a discussion or to the codebase.
+ - When posting a question or problem, provide context. What problem are you trying to solve? What are the exact steps to recreate the problem for others to reproduce?
+ - Help and respond to others that post to the forum. Have you encountered a similar problem or tried to implement a similar feature? Share your experiences!
+ - Share with us what you are using PhET code for! Share in the [Show and Tell category](https://github.com/orgs/phetsims/discussions/categories/show-and-tell) of the Discussion forum.
 
 ## I want to make an entirely new simulation using the PhET Library Stack! What should I do?
 
 ### If you are an individual or small group interested in or have made progress in making a new simulation
+
 The best resources available to you can be found in the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md) and [other documentation](https://github.com/phetsims/phet-info/tree/master/doc) found in the `phet-info` repository. We have seen small test projects, academic projects (e.g. education research for a PhD), or open source curriculum projects successfully develop custom simulations, leveraging our code base. It requires expertise in design and in JavaScript/TypeScript, but is very possible for dedicated developers and teams. If you have made significant progress and are committed to your STEM simulation, please reach out to us through the [community discussion forum](https://github.com/orgs/phetsims/discussions) to discuss any support we may be able to provide.
 
 ### If you are a commercial organization interested in making new simulations 
+
 See the [Source Code page of our website](https://phet.colorado.edu/en/about/source-code) for more information.
+
+<!-- ### What happens to my projects if these libraries stop being supported? -->
 
 # Licensing
 
