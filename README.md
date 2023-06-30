@@ -18,29 +18,27 @@
  There are many libraries out there for creating and rendering interactive content on the web - why might you choose the PhET Library Stack? We created and evolved the PhET Library because no existing platform met all of the needs for our simulations with enough flexibility and robustness required to support our end-users. You may be interested in using the PhET Library Stack if having all or most of the following features natively available to you is important:
 
 <!-- Notes From Sam Reid below. We should VERIFY FOR ACCURACY AND ADD MORE DETAIL -->
-:star:  Cross Platform
-:star:  Pixel Perfect Design
-:star:  Swipe to snag
+:star:  PDOM and screen reader accessibility
 :star:  Enhance touch areas/mouse areas
 :star:  Internationalization
-:star:  Component Library + Build your own
-:star:  High pixel density devices
-:star:  TypeScript = type safety + autocomplete
-:star:  PDOM and screen reader accessibility
+:star:  API for specifying keyboard traversal order
 :star:  Voicing
+:star:  Swipe to snag
 :star:  Pinch to zoom (this is normal for HTML but value added over pixi)
 :star:  Downloadable / fully offline / Single-File artifacts
-:star:  Render to SVG, canvas or WebGL (partial)
-:star:  API for specifying keyboard traversal order
+:star:  Render to SVG, Canvas or WebGL (partial), whatever works best on your browser/platform
 :star:  Layout engine
-:star:  Abstraction over CSS
+:star:  High pixel density devices
+:star:  TypeScript = type safety + autocomplete
+:star:  Pixel Perfect Design
+:star:  Component Library + Build your own
 :star:  Axon Property.link
 
 - Abstract declarative APIs allow scenery to adjust performance/quality on demand, using whatever technology is best on the given browser (and to work around browser bugs)
 - Clipping/filtering/positioning/layering works seamlessly across technologies used (SVG/Canvas/WebGL)
 - Codebase is set up to support easy-to-read/maintain as a default, always with the option to customize for performance or quality (e.g. dot, mutable forms available for performance, immutable forms available for readability and ease-of-use)
 - Able to serve the final product in a single HTML/XHTML with no external assets or servers (this is the largest constraint affecting what we do currently)
-- Input system that supports extended/customizable touch handling and accessibility from the base up
+- Input system that supports extended/customizable mouse/touch handling and accessibility from the base up (and does not vary based on platform)
 - Advanced layout (based on customizable bounds), and accurate shape computations and CAG for interfaces and components
 - Garbage collector friendly - pooling is used
 - Library of IU components that are battle tested and flexible
@@ -80,23 +78,23 @@ vegas -->
 
 | Repository  | LOC | Description |
 | ------------- | ------------- | ---------- |
-| [joist](https://github.com/phetsims/joist/)  | 10,000  | Simulation loading, homescreen + navigation bar, screen management. Uses some user interface components from [sun](https://github.com/phetsims/sun/). Uses [scenery](https://github.com/phetsims/scenery/) to render and process input. Runs the animation loop.
+| [scenery](https://github.com/phetsims/scenery/)  | 86,000  | Foundational library for representing graphics (rendering to SVG, canvas or WebGL), handling input and generally abstraction for the browser and cross-platform support. Shapes are represented using [kite](https://github.com/phetsims/kite/). Observer and emitter patterns use [axon](https://github.com/phetsims/axon/). Support for alternative input and accessibility features.
+| [twixt](https://github.com/phetsims/brand/)  | 2,000  | Support for tweening and animation. Can be used to animate user interface components or artwork in the view or model elements directly.
 | [sun](https://github.com/phetsims/sun/) | 13,000  | Graphical user interface components, such as buttons and checkboxes which could be useful in any application context. Built using [scenery](https://github.com/phetsims/scenery/).
 | [scenery-phet](https://github.com/phetsims/scenery-phet/)  | 25,000  | Simulation-specific components, such as probes, sensors, buckets, magnifying glasses, etc. Built using [scenery](https://github.com/phetsims/scenery/).
-| [scenery](https://github.com/phetsims/scenery/)  | 86,000  | Foundational library for representing graphics (rendering to SVG, canvas or WebGL), handling input and generally abstraction for the browser and cross-platform support. Shapes are represented using [kite](https://github.com/phetsims/kite/). Observer and emitter patterns use [axon](https://github.com/phetsims/axon/). Support for alternative input and accessibility features.
 | [tambo](https://github.com/phetsims/tambo/)  | 6,000  | Sound effects and sonification. Uses [axon](https://github.com/phetsims/axon/) for some observer/listeners support.
+| [joist](https://github.com/phetsims/joist/)  | 10,000  | Simulation loading, homescreen + navigation bar, screen management. Uses some user interface components from [sun](https://github.com/phetsims/sun/). Uses [scenery](https://github.com/phetsims/scenery/) to render and process input. Runs the animation loop.
 | [brand](https://github.com/phetsims/brand/)  | 100  | Provides support for the main supported brands "PhET" and "PhET-iO" and hooks for clients to develop their own branding.
-| [twixt](https://github.com/phetsims/brand/)  | 2,000  | Support for tweening and animation. Can be used to animate user interface components or artwork in the view or model elements directly.
 
 ## Model Libraries
 
 | Repository  | LOC | Description |
 | ------------- | ------------- | ---------- |
-| [kite](https://github.com/phetsims/kite/)  | 16,000  | Shapes and geometry. Mathematics implemented using [dot](https://github.com/phetsims/dot/)
-| [dot](https://github.com/phetsims/dot/)  | 21,000  | Mathematical objects such as Vector, Matrix, and corresponding numerical algorithms
-| [axon](https://github.com/phetsims/axon/)  | 8,000  | Data structures for the observer pattern (Property) and listener pattern (Emitters).
-| [phet-core](https://github.com/phetsims/phet-core/)  | 4,000  | Basic utility & support data structures and algorithms
 | [tandem](https://github.com/phetsims/tandem/)  | 5,000  | Simulation-side code to support PhET-iO instrumentation.
+| [phet-core](https://github.com/phetsims/phet-core/)  | 4,000  | Basic utility & support data structures and algorithms
+| [axon](https://github.com/phetsims/axon/)  | 8,000  | Data structures for the observer pattern (Property) and listener pattern (Emitters).
+| [dot](https://github.com/phetsims/dot/)  | 21,000  | Mathematical objects such as Vector, Matrix, and corresponding numerical algorithms
+| [kite](https://github.com/phetsims/kite/)  | 16,000  | Shapes and geometry. Mathematics implemented using [dot](https://github.com/phetsims/dot/)
 
 ## Tooling & Other
 
@@ -130,9 +128,14 @@ vegas -->
  - [Cupcake Snake Game by @samreid](https://github.com/samreid/cupcake-snake)
  - [Paper Playground - A multimodal, collaborative web interaction design tool using phetlib](https://github.com/phetsims/paper-land/)
  - [Simple examples using Scenery](https://phetsims.github.io/scenery/examples/)
+ - [Paper Mario-like game for their partner, by @jonathanolson](https://jonathanolson.net/miscworks/build/ring-attack-solo.html)
+ - [4D visualization with 3D images, by @joanthanolson](https://jonathanolson.net/miscworks/build/fourtest.html)
+ - [Rubik's Cube searchable algorithms page, by @jonathanolson](https://jonathanolson.net/miscworks/build/rubik_algorithms.html)
+ - [Simplified manual for "Keep Talking and Nobody Explodes" game, by @jonathanolson](https://jonathanolson.net/miscworks/build/ktane.html)
+ - [Letterboxing Tool by @jonathanolson](https://jonathanolson.net/miscworks/build/boxing.html)
  - For a simple demonstration using phet-lib, see [Scenery Lab Demo](https://github.com/phetsims/scenery-lab-demo)
 
-# Joining the Comminity and Contributing
+# Joining the Community and Contributing
 
  Join the community by participating in the [community discussion forum](https://github.com/orgs/phetsims/discussions) with what you're  working on, your ideas, and questions!
  
