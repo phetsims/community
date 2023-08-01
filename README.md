@@ -20,7 +20,7 @@
 - :star:  High pixel density devices
 - :star:  TypeScript = type safety + autocomplete
 - :star:  Parallel Document Object Model (PDOM) and screen reader accessibility
-- :star:  Support for customizable, dynamic spoken content using Web Speech ([Voicing]())
+- :star:  Support for customizable, dynamic spoken content using Web Speech ([coined "Voicing"](https://youtu.be/mwCc_NDmqx4))
 - :star:  In-app pinch to zoom and zoomed-in panning.
 - :star:  Downloadable / fully offline / Single-File artifacts
 - :star:  Render to SVG, canvas or WebGL (partial)
