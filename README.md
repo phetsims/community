@@ -119,13 +119,13 @@ For anyone interested in setting up a development environment, the [PhET Develop
 
 In the [PhET documentation directory](https://github.com/phetsims/phet-info/tree/master/doc), you'll find a range of helpful resources for different aspects of development, including:
 
-- **Dev Exercises**: Enhance your development skills with these hands-on exercises. Check out the [new dev exercises document](https://github.com/phetsims/phet-info/blob/master/doc/dev-exercises.md)
-- **TypeScript Quickstart**: If you're new to TypeScript or need a refresher, you can follow our [TypeScript Quickstart guide](https://github.com/phetsims/phet-info/blob/master/doc/typescript-quickstart.md)
+- **Dev Exercises**: Enhance your SceneryStack development skills with these hands-on exercises. Check out the [PhET dev exercises document](https://github.com/phetsims/phet-info/blob/master/doc/phet-dev-exercises.md)
+- **TypeScript Quickstart**: If you're new to TypeScript or need a refresher, you can follow our [TypeScript Quickstart guide](https://github.com/phetsims/phet-info/blob/master/doc/typescript-quick-start.md)
 - **Coding Conventions**: Ensure your code is consistent and readable with our [coding conventions](https://github.com/phetsims/phet-info/blob/master/doc/coding-conventions.md)
-- **Software Design Patterns**: Familiarize yourself with the [software design patterns](https://github.com/phetsims/phet-info/blob/master/doc/software-design-patterns.md) used within PhET projects.
-- **Accessibility Documentation**: Learn about providing alternative input and interactive description through our accessibility development guidelines, such as:
-  - [Alternative Input Guide](https://github.com/phetsims/phet-info/blob/master/doc/alternative-input.md)
-  - [Interactive Description Guide](https://github.com/phetsims/phet-info/blob/master/doc/interactive-description.md)
+- **Software Design Patterns**: Familiarize yourself with the [software design patterns](https://github.com/phetsims/phet-info/blob/master/doc/phet-software-design-patterns.md) used within PhET projects.
+- **Accessibility Documentation**: Learn about designing accessibility features such as alternative input, screen-reader friendly interactive description, and more through our development guidelines:
+  - [Alternative Input Guide](https://github.com/phetsims/phet-info/blob/master/doc/alternative-input-quickstart-guide.md)
+  - [Interactive Description Guide](https://github.com/phetsims/phet-info/blob/master/doc/interactive-description-technical-guide.md)
 
 ### In-Code Documentation
 
