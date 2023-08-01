@@ -99,6 +99,7 @@ Below you will find a list of the libraries that make up SceneryStack. Each libr
 
 ### Other
 
+| Repository  | LOC | Description |
 | ------------- | ------------- | ---------- |
 | [community](https://github.com/phetsims/community) | - | This repository! Discussion forum and resources for the developer community using SceneryStack to create interactive simulations and other web interactives in HTML5.
 | [a11y-research](https://github.com/phetsims/a11y-research) | - | Research and development of accessibility features and Inclusive Design for multimodal web interactives.
