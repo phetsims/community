@@ -98,7 +98,7 @@ Below you will find a list of the libraries that make up SceneryStack. Each libr
 | [sherpa](https://github.com/phetsims/sherpa/)  | - | All of our 3rd-party dependencies. Some such as font-awesome or lodash are used in every simulation and some such as numeric or three.js are used in only some simulations.
 
 ### Other
-
+| ------------- | ------------- | ---------- |
 | [community](https://github.com/phetsims/community) | - | This repository! Discussion forum and resources for the developer community using SceneryStack to create interactive simulations and other web interactives in HTML5.
 | [a11y-research](https://github.com/phetsims/a11y-research) | - | Research and development of accessibility features and Inclusive Design for multimodal web interactives.
 | [phet-info](https://github.com/phetsims/phet-info) | - | Documentation for the development of PhET Interactive Simulations, including helpful tips for using SceneryStack to create interactive simulations and web interactives in HTML5.
