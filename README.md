@@ -11,23 +11,23 @@
 
  There are many libraries out there for creating and rendering interactive content on the web - why might you choose SceneryStack? We created and evolved the PhET Library because no existing platform met all of the needs for our simulations with enough scalability, flexibility, and robustness required to support our end-users. You may be interested in using SceneryStack if having all or most of the following features natively available to you is important:
 
-:star:  Cross Platform
-:star:  Pixel Perfect Design
-:star:  Swipe to snag
-:star:  Enhance touch areas/mouse areas
-:star:  Ready for internationalization
-:star:  Component Library including building your own
-:star:  High pixel density devices
-:star:  TypeScript = type safety + autocomplete
-:star:  Parallel Document Object Model (PDOM) and screen reader accessibility
-:star:  Support for customizable, dynamic spoken content using Web Speech ([Voicing]())
-:star:  In-app pinch to zoom and zoomed-in panning.
-:star:  Downloadable / fully offline / Single-File artifacts
-:star:  Render to SVG, canvas or WebGL (partial)
-:star:  API for specifying keyboard traversal order
-:star:  Layout engine
-:star:  Abstraction over CSS
-:star:  Axon Property.link
+- :star:  Cross Platform
+- :star:  Pixel Perfect Design
+- :star:  Swipe to snag
+- :star:  Enhance touch areas/mouse areas
+- :star:  Ready for internationalization
+- :star:  Component Library including building your own
+- :star:  High pixel density devices
+- :star:  TypeScript = type safety + autocomplete
+- :star:  Parallel Document Object Model (PDOM) and screen reader accessibility
+- :star:  Support for customizable, dynamic spoken content using Web Speech ([Voicing]())
+- :star:  In-app pinch to zoom and zoomed-in panning.
+- :star:  Downloadable / fully offline / Single-File artifacts
+- :star:  Render to SVG, canvas or WebGL (partial)
+- :star:  API for specifying keyboard traversal order
+- :star:  Layout engine
+- :star:  Abstraction over CSS
+- :star:  Axon Property.link
 
 - Abstract declarative APIs allow scenery to adjust performance/quality on demand, using whatever technology is best on the given browser (and to work around browser bugs)
 - Clipping/filtering/positioning/layering works seamlessly across technologies used (SVG/Canvas/WebGL)
