@@ -1,11 +1,11 @@
 # Welcome to the SceneryStack Developer Community! ![teal paper airplane icon](scenery-stack-icon.png)
  <!-- Any good ideas for images we can drop throughout this document? -->
 
- This repository houses discussion and resources for the developer community using the libraries within SceneryStack to create interactive simulations and other web interactives in HTML5.
+ This repository houses discussions and resources for the developer community using the libraries within SceneryStack to create interactive simulations and other web interactives in HTML5.
 
 ## What is SceneryStack?
 
- They are a collection of libraries built around an MVC framework that can be used **together or separately** to support an interactive web project. Each library is housed PhET uses many or all of these libraries when creating an educational interactive simulation. Some libraries are more specific to our usage, including assets and branding, but most offer more generalizable use cases.
+ They are a collection of libraries built around an MVC framework that can be used **together or separately** to support an interactive web project. PhET uses many or all of these libraries when creating an educational interactive simulation. Some libraries are more specific to our usage, including assets and branding, but most offer more generalizable use cases.
 
 ### Why use SceneryStack? 
 
@@ -16,14 +16,14 @@
 - :star:  Swipe to snag
 - :star:  Enhance touch areas/mouse areas
 - :star:  Ready for internationalization
-- :star:  Component Library including building your own
+- :star:  Component Library, including building your own
 - :star:  High pixel density devices
 - :star:  TypeScript = type safety + autocomplete
 - :star:  Parallel Document Object Model (PDOM) and screen reader accessibility
 - :star:  Support for customizable, dynamic spoken content using Web Speech ([coined "Voicing"](https://youtu.be/mwCc_NDmqx4))
 - :star:  In-app pinch to zoom and zoomed-in panning.
 - :star:  Downloadable / fully offline / Single-File artifacts
-- :star:  Render to SVG, canvas or WebGL (partial)
+- :star:  Render to SVG, canvas, or WebGL (partial)
 - :star:  API for specifying keyboard traversal order
 - :star:  Layout engine
 - :star:  Abstraction over CSS
@@ -31,10 +31,10 @@
 
 - Abstract declarative APIs allow scenery to adjust performance/quality on demand, using whatever technology is best on the given browser (and to work around browser bugs)
 - Clipping/filtering/positioning/layering works seamlessly across technologies used (SVG/Canvas/WebGL)
-- Codebase is set up to support easy-to-read/maintain as a default, always with the option to customize for performance or quality (e.g. dot, mutable forms available for performance, immutable forms available for readability and ease-of-use)
+- Codebase is set up to support easy-to-read/maintain as a default, always with the option to customize for performance or quality (e.g., dot, mutable forms available for performance, immutable forms available for readability and ease-of-use)
 - Able to serve the final product in a single HTML/XHTML with no external assets or servers (this is the largest constraint affecting what we do currently)
 - Input system that supports extended/customizable touch handling and accessibility from the base up
-- Advanced layout (based on customizable bounds), and accurate shape computations and CAG for interfaces and components
+- Advanced layout (based on customizable bounds) and accurate shape computations and CAG for interfaces and components
 - Garbage collector friendly - pooling is used
 - Library of UI components that are battle tested and flexible
 
@@ -63,19 +63,19 @@ tappi
 twixt
 utterance-queue
 vegas -->
-Below you will find a list of the libraries that make up SceneryStack. Each library has a link to its repository, a brief description, and a link to its documentation. The libraries are organized into four categories: **View Libraries**, **Model Libraries**, and **Tooling for Simulation Development**, and **Other**. Additional libraries that have been situationally used for development that are not mentioned here are also available and open for contribution and use in the [phetsims GitHub page](https://github.com/phetsims/).
+Below you will find a list of the libraries that make up SceneryStack. Each library has a link to its repository, a brief description, and a link to its documentation. The libraries are organized into four categories: **View Libraries**, **Model Libraries**, **Tooling for Simulation Development**, and **Other**. Additional libraries that have been situationally used for development that are not mentioned here are also available and open for contribution and use in the [phetsims GitHub page](https://github.com/phetsims/).
 
 ### View Libraries
 
 | Repository  | LOC | Description |
 | ------------- | ------------- | ---------- |
-| [scenery](https://github.com/phetsims/scenery/)  | 86,000  | Foundational library for representing graphics (rendering to SVG, canvas or WebGL), handling input and generally abstraction for the browser and cross-platform support. Shapes are represented using |[kite](https://github.com/phetsims/kite/). Observer and emitter patterns use [axon](https://github.com/phetsims/axon/). Support for alternative input (e.g., keyboard input) and accessibility features.
-| [sun](https://github.com/phetsims/sun/) | 13,000  | Graphical user interface components, such as buttons and checkboxes which could be useful in any application context. Built using [scenery](https://github.com/phetsims/scenery/).
+| [scenery](https://github.com/phetsims/scenery/)  | 86,000  | Foundational library for representing graphics (rendering to SVG, canvas, or WebGL), handling input, and generally abstraction for the browser and cross-platform support. Shapes are represented using |[kite](https://github.com/phetsims/kite/). Observer and emitter patterns use [axon](https://github.com/phetsims/axon/). Support for alternative input (e.g., keyboard input) and accessibility features.
+| [sun](https://github.com/phetsims/sun/) | 13,000  | Graphical user interface components, such as buttons and checkboxes, which could be useful in any application context. Built using [scenery](https://github.com/phetsims/scenery/).
 | [joist](https://github.com/phetsims/joist/)  | 10,000  | Simulation loading, homescreen + navigation bar, screen management. Uses some user interface components from [sun](https://github.com/phetsims/sun/). Uses [scenery](https://github.com/phetsims/scenery/) to render and process input. Runs the animation loop.
 | [scenery-phet](https://github.com/phetsims/scenery-phet/)  | 25,000  | Simulation-specific components, such as probes, sensors, buckets, magnifying glasses, etc. Built using [scenery](https://github.com/phetsims/scenery/).
 | [tambo](https://github.com/phetsims/tambo/)  | 6,000  | Sound effects and sonification. Uses [axon](https://github.com/phetsims/axon/) for some observer/listeners support.
 | [brand](https://github.com/phetsims/brand/)  | 100  | Provides support for the main supported brands "PhET" and "PhET-iO" and hooks for clients to develop their own branding.
-| [twixt](https://github.com/phetsims/brand/)  | 2,000  | Support for tweening and animation. Can be used to animate user interface components or artwork in the view or model elements directly.
+| [twixt](https://github.com/phetsims/brand/)  | 2,000  | Support for tweening and animation. It can be used to animate user interface components or artwork in the view or model elements directly.
 
 ### Model Libraries
 
@@ -95,7 +95,7 @@ Below you will find a list of the libraries that make up SceneryStack. Each libr
 | [chipper](https://github.com/phetsims/chipper/)  | 10,000  | Tools for developing and building simulations. Uses code in [perennial-alias](https://github.com/phetsims/perennial-alias/) for some tasks.
 | [perennial](https://github.com/phetsims/perennial/)  | 11,000  | Maintenance tools that won't change with different versions of chipper checked out (always runs in master).
 | [perennial-alias](https://github.com/phetsims/perennial/)  | 11,000  | Copy of perennial that can run on non-master SHAs.
-| [sherpa](https://github.com/phetsims/sherpa/)  | - | All of our 3rd-party dependencies. Some such as font-awesome or lodash are used in every simulation and some such as numeric or three.js are used in only some simulations.
+| [sherpa](https://github.com/phetsims/sherpa/)  | - | All of our 3rd-party dependencies. Some, such as font-awesome or lodash, are used in every simulation, and some, such as numeric or three.js, are used in only some simulations.
 
 ### Other
 
@@ -123,7 +123,7 @@ In the [PhET documentation directory](https://github.com/phetsims/phet-info/tree
 - **TypeScript Quickstart**: If you're new to TypeScript or need a refresher, you can follow our [TypeScript Quickstart guide](https://github.com/phetsims/phet-info/blob/master/doc/typescript-quick-start.md)
 - **Coding Conventions**: Ensure your code is consistent and readable with our [coding conventions](https://github.com/phetsims/phet-info/blob/master/doc/coding-conventions.md)
 - **Software Design Patterns**: Familiarize yourself with the [software design patterns](https://github.com/phetsims/phet-info/blob/master/doc/phet-software-design-patterns.md) used within PhET projects.
-- **Accessibility Documentation**: Learn about designing accessibility features such as alternative input, screen-reader friendly interactive description, and more through our development guidelines:
+- **Accessibility Documentation**: Learn about designing accessibility features such as alternative input, screen-reader-friendly interactive description, and more through our development guidelines:
   - [Alternative Input Guide](https://github.com/phetsims/phet-info/blob/master/doc/alternative-input-quickstart-guide.md)
   - [Interactive Description Guide](https://github.com/phetsims/phet-info/blob/master/doc/interactive-description-technical-guide.md)
 
@@ -142,26 +142,26 @@ Feel free to explore these documents and the code itself to get a deeper underst
 - [Paper Playground - A multimodal, collaborative web interaction design tool using phetlib](https://github.com/phetsims/paper-land/)
 - [Simple examples using Scenery](https://phetsims.github.io/scenery/examples/)
 - [Paper Mario-like game for their partner, by @jonathanolson](https://jonathanolson.net/miscworks/build/ring-attack-solo.html)
-- [4D visualization with 3D images, by @joanthanolson](https://jonathanolson.net/miscworks/build/fourtest.html)
+- [4D visualization with 3D images, by @jonathanolson](https://jonathanolson.net/miscworks/build/fourtest.html)
 - [Rubik's Cube searchable algorithms page, by @jonathanolson](https://jonathanolson.net/miscworks/build/rubik_algorithms.html)
 - [Simplified manual for "Keep Talking and Nobody Explodes" game, by @jonathanolson](https://jonathanolson.net/miscworks/build/ktane.html)
 - [Letterboxing Tool by @jonathanolson](https://jonathanolson.net/miscworks/build/boxing.html)
 - For a simple demonstration using phet-lib, see [Scenery Lab Demo](https://github.com/phetsims/scenery-lab-demo)
 - and of course, [all PhET Interactive Simulations](https://github.com/phetsims)
 
-Creating something? Let us know and let's get your example added here!
+Creating something? Let us know, and let's get your example added here!
 
 ## Joining the Community and Contributing 🤝
 
- Join the SceneryStack community by participating in the [community discussion forum](https://github.com/orgs/phetsims/discussions). Share progress on you're working on, your ideas, and ask questions!
+ Join the SceneryStack community by participating in the [community discussion forum](https://github.com/orgs/phetsims/discussions). Share the progress of what you're working on, your ideas, and ask questions!
 
- We welcome many kinds of contributions to SceneryStack from common code features/bug fixes to documentation updates.
+ We welcome many kinds of contributions to SceneryStack, from common code features/bug fixes to documentation updates.
 
  Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) found in any common code repository.
 
 ## FAQ
 
-### What this repository is for?
+### What is this repository for?
 
   Discussions, resources, and collaboration around the use and improvement of [SceneryStack](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md#source-code-and-dependencies) created and maintained by the developers at the PhET Interactive Simulations project.
 
@@ -171,11 +171,11 @@ Creating something? Let us know and let's get your example added here!
 
  SceneryStack is the HTML5/JavaScript/TypeScript APIs (detailed above) that PhET Interactive Simulations are built on. The use of SceneryStack **is not limited to creating interactive science and math simulations!** It can be used to support the creation of all web interactives. PhET Common Code supports rich and inclusive multimodal interaction, including the architecture to build robust alternative input and screen reader access when used in conjunction with our [Interactive Description Design Framework](https://www.coursera.org/learn/description-design-for-interactive-learning-resources). 
 
- PhET Interactive Simulations are the free educational science and math products created using SceneryStack by the designers and developers at the PhET Interactive Simulations Project. They are developed using [research-based, pedagogically-minded design methods](https://phet.colorado.edu/).
+ PhET Interactive Simulations are free educational science and math products created using SceneryStack by the designers and developers at the PhET Interactive Simulations Project. They are developed using [research-based, pedagogically-minded design methods](https://phet.colorado.edu/).
 
 ### Where can I get help or provide feedback for specific PhET Simulations?
 
-For anything involving PhET created simulations, see the [PhET website](https://phet.colorado.edu).
+For anything involving PhET-created simulations, see the [PhET website](https://phet.colorado.edu).
 
 - To request **new PhET Simulations or new features in PhET Simulations**, follow the links on the [Getting Started section of the Help Center](https://phet.colorado.edu/en/help-center/getting-started#:~:text=I%20have%20a%20sim%20idea.%20Where%20can%20I%20send%20it%3F).
 - **For help or questions related to using PhET Simulations**, please see our [website](https://phet.colorado.edu/en/help-center/getting-started) or e-mail [phethelp@colorado.edu](mailto:phethelp@colorado.edu).
@@ -196,7 +196,7 @@ For anything involving PhET created simulations, see the [PhET website](https://
 
 #### If you are an individual or small group interested in or have made progress in making a new simulation
 
-The best resources available to you can be found in the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md) and [other documentation](https://github.com/phetsims/phet-info/tree/master/doc) found in the `phet-info` repository. We have seen small test projects, academic projects (e.g. education research for a PhD), or open source curriculum projects successfully develop custom simulations, leveraging our code base (See [Examples](#examples-using-scenerystack) above). It requires expertise in design and in JavaScript/TypeScript, but is very possible for dedicated developers and teams. If you have made significant progress and are committed to your STEM simulation, please reach out to us through the [community discussion forum](https://github.com/orgs/phetsims/discussions) to discuss any support we may be able to provide.
+The best resources available to you can be found in the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md) and [other documentation](https://github.com/phetsims/phet-info/tree/master/doc) found in the `phet-info` repository. We have seen small test projects, academic projects (e.g., education research for a Ph.D.), or open source curriculum projects successfully develop custom simulations, leveraging our code base (See [Examples](#examples-using-scenerystack) above). It requires expertise in design and in JavaScript/TypeScript, but it is very possible for dedicated developers and teams. If you have made significant progress and are committed to your STEM simulation, please reach out to us through the [community discussion forum](https://github.com/orgs/phetsims/discussions) to discuss any support we may be able to provide.
 
 #### If you are a commercial organization interested in making new simulations 
 
@@ -204,12 +204,12 @@ See the [Source Code page of our website](https://phet.colorado.edu/en/about/sou
 
 ### What happens to my projects if these libraries stop being supported?
 
-SceneryStack is the foundation of the PhET Interactive Simulations project. It is used in all of PhET's simulations and is actively maintained by the PhET team. PhET has no plans to stop supporting SceneryStack, so long as PhET Interactive Simulations continues to exist.
+SceneryStack is the foundation of the PhET Interactive Simulations project. It is used in all of PhET's simulations and is actively maintained by the PhET team. PhET has no plans to stop supporting SceneryStack, so long as PhET Interactive Simulations continue to exist.
 
 ## Licensing
 
-The libraries contained within the SceneryStack community are licensed through the MIT License, freely available for use by anyone, including this repository.
+The libraries contained within the SceneryStack community are licensed through the MIT License and freely available for use by anyone, including this repository.
 
-*PhET created Simulations* differ in their licensing (e.g., GPLv3) depending on the details of their development cycle (e.g., funding, partnerships, and third-party libraries). See the LICENSE file in each repository for details.
+*PhET-created Simulations* differ in their licensing (e.g., GPLv3) depending on the details of their development cycle (e.g., funding, partnerships, and third-party libraries). See the LICENSE file in each repository for details.
 
 PhET does not engage in licensing our *Simulation source code* to commercial entities at this time. Commercial partners interested in licensing our *Simulations* should see the PhET Interactive Simulations website for [partnership inquiries](https://phet.colorado.edu/en/partnerships).
