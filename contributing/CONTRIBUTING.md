@@ -6,7 +6,7 @@ First off, thank you for consideration in contributing to PhET Common Code Libra
 
 ## Features and bug fixes to the PhET Common Code Libraries
 
-There are a number of common code libraries (each with their own repository under [phetsims](https://github.com/phetsims/), some which depend on others (e.g., `sun` relies on `scenery` to create UI components). We welcome additions or fixes to any of the repositories that fall under our [Common Code umbrella](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md#source-code-and-dependencies).
+There are a number of common code libraries (each with their own repository under [phetsims](https://github.com/phetsims/), some which depend on others (e.g., `sun` relies on `scenery` to create UI components). We welcome additions or fixes to any of the repositories that fall under our [Common Code umbrella](https://github.com/phetsims/phet-info/blob/main/doc/phet-development-overview.md#source-code-and-dependencies).
 
 To make any contributions, please open an issue if one does not exist and then open a pull request with your changes.
 
@@ -64,7 +64,7 @@ That's great! Thank you so much for taking the initiative to help make our simul
 ## I want to make an entirely new simulation! What should I do?
 
 ### If you are an individual or small group interested in or have made progress in making a new simulation
-The best resources available to you can be found in the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md) and [other documentation](https://github.com/phetsims/phet-info/tree/master/doc) found in the `phet-info` repository. We have seen small test projects, academic projects (e.g. education research for a PhD), or open source curriculum projects successfully develop custom simulations, leveraging our code base. It requires expertise in design and in JavaScript/TypeScript, but is very possible for dedicated developers and teams. If you have made significant progress and are committed to your STEM simulation, please reach out to us at phethelp@colorado.edu or through the [community discussion forum](https://github.com/orgs/phetsims/discussions) to discuss any support we may be able to provide.
+The best resources available to you can be found in the [PhET Development Overview](https://github.com/phetsims/phet-info/blob/main/doc/phet-development-overview.md) and [other documentation](https://github.com/phetsims/phet-info/tree/main/doc) found in the `phet-info` repository. We have seen small test projects, academic projects (e.g. education research for a PhD), or open source curriculum projects successfully develop custom simulations, leveraging our code base. It requires expertise in design and in JavaScript/TypeScript, but is very possible for dedicated developers and teams. If you have made significant progress and are committed to your STEM simulation, please reach out to us at phethelp@colorado.edu or through the [community discussion forum](https://github.com/orgs/phetsims/discussions) to discuss any support we may be able to provide.
 
 ### If you are a commercial organization interested in making new simulations 
 See the [Source Code page of our website](https://phet.colorado.edu/en/about/source-code) for more information.
