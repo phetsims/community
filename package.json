@@ -1,7 +1,4 @@
 {
   "type": "module",
-  "name": "community",
-  "eslintConfig": {
-    "extends": "../chipper/eslint/sim_eslintrc.js"
-  }
+  "name": "community"
 }
